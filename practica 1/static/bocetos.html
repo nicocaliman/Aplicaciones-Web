@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>
+            Bocetos 
+        </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
+    </head>
+    <body>
+        <nav>
+            <ul>
+                 <li>
+                      <a href="index.html">Índice</a>         <!--presentacion inicial de la propuesta-->
+                 </li>
+                 <li>
+                      <a href="detalles.html">Detalles</a>    <!--descripcion extendida-->
+                 </li> 
+                 <li>
+                      <a href="bocetos.html">Bocetos</a>      <!--bocetos de la pagina web dibujados en papel y explicaciones-->
+                 </li>
+                 <li> 
+                      <a href="miembros.html">Miembros</a>     <!--datos de los miembros del grupo-->
+                 </li>
+                 <li>
+                      <a href="planificacion.html">Planificación</a>  <!--plan detallado  para el desarrollo del proyecto-->
+                 </li>
+                 <li>
+                      <a href="contacto.html">Contacto</a>    <!--formulario de contacto para pedir mas informacion-->
+                 </li>
+            </ul>
+        </nav>
+
+       <header>
+        <h1>
+            Bocetos
+        </h1>
+        
+       </header>
+
+       <section class="indice">
+        <h2>Índice de secciones</h2>
+        <ul>
+            <li><a href="#pantalla_principal">Pantalla principal</a></li>            
+            <li><a href="#gestion_recetas">Gestión de recetas</a></li>        
+            <li><a href="#gestion_compras">Gestión de compras</a></li>
+        </ul>
+        <h2>
+            Descripción de la apariencia
+        </h2>
+        <p>
+            Esta página describe la apariencia de la web, incluyendo bocetos creados con Excalidraw de las distintas páginas intermedias que verán los usuarios. 
+            Estos diseños iniciales pueden ser modificados en el transcurso del proyecto.
+        </p>
+       </section>
+    <section id="pantalla_principal">   <!--bocetos para la pantalla principal-->
+        <h3>
+            Pantalla principal
+        </h3>
+        <p>
+            En este boceto se puede apreciar la pantalla de inicio de la aplicación, incluyendo elementos como el logo, la barra de navegación y un contenido introductorio.
+            El usuario, si desea registrarse o iniciar sesión, tendrá que hacer click sobre el icono verde.
+            
+            En cambio, si desea navegar por las demás páginas que proporciona la plataforma,
+            el cliente deberá pinchar sobre el otro icono. Usuarios no registrados no tendrán la misma accesibilidad que aquellos que esten registrados en la aplicación.
+        </p>  
+        <img src="img/boceto_pagina_principal.svg" alt="Boceto de la pantalla principal">  
+        <section id="registro">
+            <h4>
+                Registro de usuario
+            </h4>        
+            <p>
+                Esta será la vista que tendrán los usuarios al registrarse. Se les pedirá datos como nombre completo, correo electrónico y contraseña.
+                Si el parseo tiene sentido, el usuario será registrado en la base de datos.
+            </p>
+            <img src="img/boceto_registro.svg" alt="Boceto para el registro de usuarios"> 
+        </section>   
+        <section id="login">                     
+            <h4>
+                Login de usuario
+            </h4>
+            <p>
+                Si el usuario ya se encuentra registrado en la base de datos, la interfaz cambia. En este caso el cliente visualizará el contenido de forma similar al 
+                de la imagen.
+                Por consiguiente, lo único que se le pedirá al usuario es que inserte su dirección de correo electrónico así como su contraseña.
+               
+                Tras haber insertado lo pedido y una vez que las comprobaciones para identificar al usuario sean exitosas, el login estaría completado.
+                El administrador también iniciará sesión desde esta interfaz.
+            </p>
+            <img src="img/boceto_login.svg" alt="Boceto para el login del usuario"> 
+        </section>        
+    </section>
+    <section id="gestion_recetas">  <!--bocetos para la gestion de recetas-->
+        <h3>
+            Gestión de recetas
+        </h3>
+        <p>
+            En esta página se mostrarán los platos de comida. El usuario puede filtrar la búsqueda por ingredientes, plato específico... Se mostrará la imagen del plato seguida de una breve descripción.
+            Una vez hecho click sobre la imagen, el cliente se redireccionará a una nueva página donde aparezca con más detalle el plato, es decir, método de preparación, comentarios de otros usuarios, etc.
+            De este modo, implementaremos la funcionalidad de sistema de recomendaciones personalizadas.
+        </p>
+        <img src="img/boceto_busqueda_recetas.svg" alt="Boceto para la gestion de recetas">
+        <p>
+           
+            Si el usuario esta logueado, recibirá sugerencias de recetas basadas en sus preferencias culinarias, historial de interacciones o ingredientes que tenga disponibles.
+        </p>
+        <img src="img/boceto_recomendaciones_usuario.svg" alt="Boceto para búsqueda de recetas del usuario registrado">
+        <p>
+            Así es como se ilustraría la página una vez se haya seleccionado el plato:
+        </p>
+        <img src="img/boceto_pagina_plato.svg" alt="Boceto para la visualización del plato"> 
+        <p>
+            El boceto de arriba y el siguiente corresponden con la funcionalidad de interacción social.
+            Debajo de los comentarios, tendremos otra caja donde el usuario pueda dejar su comentario si así lo desea.            
+        </p>        
+        <img src="img/boceto_opinion_usuario.svg" alt="Boceto para la opinión del usuario">
+        <p>
+            El admin podrá realizar todo tipo de modificaciones, tanto para términos soeces, como modificacion de fotos...
+        </p>
+        <img src="img/boceto_admin.svg" alt="boceto para el administrador">
+        <p>
+            Una vez el usuario haya iniciado sesión, podrá acceder a su perfil desde el cuál podrá agregar, modificar o eliminar recetas. Además, podrá visualizar
+            los datos de su cuenta.
+            El administrador tendrá una interfaz similar, pero con más opciones de "superusuario". La funcionalidad de este boceto resulta ser la de gestión de recetas.
+        </p>    
+        <img src="img/boceto_gestion_recetas.svg" alt="Boceto para la gestión de recetas">
+    </section>   
+    <section id="gestion_compras">  <!--bocetos para la gestion de compras-->
+        <h3>
+            Lista de la compra
+        </h3>
+        <p>
+            Desde la página donde se muestra la receta y los pasos que hay que seguir para poderla  a cabo, exisitirá un botón "COMPRAR INGREDIENTES".            
+            Aquí, intentamos ilustrar la funcionalidad de lista de la compra automática.
+        </p>
+        <img src="img/boceto_comprar_ingredientes.svg" alt="Boceto para comprar ingredientes">
+        <p>
+            Al pulsar sobre este botón, el usuario será redirigido al pago de los ingredientes, otorgados por un proveedor.
+        </p>
+        <img src="img/boceto_lista_compra.svg" alt="Boceto para la lista de la compra">
+        <p>
+            Una vez el cliente vea la lista visualizada, podrá proceder al pago de esta, modificarla o descargarla para poder tenerla a mano a la hora de empezar con
+            la elaboración del plato.
+            El administrador, en este caso, puede controlar el uso que hace el cliente sobre la lista cuando quiera modificarla.
+        </p>
+    </section>     
+    </body>
+</html>

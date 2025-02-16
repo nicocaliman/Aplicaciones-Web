@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificación del Proyecto</title>
+    <link rel="stylesheet" href="css/tabla.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+             <li> <a href="index.html">Índice</a> </li> <!--presentacion inicial de la propuesta--> 
+             <li> <a href="detalles.html">Detalles</a> </li>     <!--descripcion extendida-->
+             <li> <a href="bocetos.html">Bocetos </a> </li>    <!--bocetos de la pagina web dibujados en papel y explicaciones-->
+             <li> <a href="miembros.html">Miembros</a> </li> <!--datos de los miembros del grupo-->
+             <li> <a href="planificacion.html">Planificación</a> </li>  <!--plan detallado  para el desarrollo del proyecto-->
+             <li> <a href="contacto.html">Contacto</a> </li> <!--formulario de contacto para pedir mas informacion-->
+          </ul>
+      </nav>
+
+    <h1>Planificación del Proyecto</h1>
+    
+    <h2>Introducción</h2>
+    <p>En esta página se detalla la planificación del proyecto, incluyendo las tareas a realizar, la distribución del trabajo y los plazos de entrega.</p>
+    
+    <h2>Tareas del Proyecto</h2>
+    <ul>
+        <li><strong>Diseño de la base de datos</strong>: Creación de la estructura de datos necesaria. (Carlos)</li>
+        <li><strong>Gestión de recetas</strong>: Desarrollo del CRUD para recetas. (Alejandro G.)</li>
+        <li><strong>Sistema de recomendaciones</strong>: Implementación de algoritmo de sugerencias. (Alejandro R.)</li>
+        <li><strong>Interacción social</strong>: Valoraciones y comentarios en las recetas. (Nicolae)</li>
+        <li><strong>Moderación y control</strong>: Gestión de usuarios y contenido inapropiado. (Álvaro)</li>
+        <li><strong>Lista de compras automáticas</strong>: Generación de listas basadas en recetas. (Todos)</li>
+    </ul>
+    
+    <h2>Plazos y Hitos</h2>
+    <p>El desarrollo se dividirá en varias fases con fechas de entrega establecidas.</p>
+    
+    <table>
+        <caption>Fechas de los hitos</caption>
+        <tr>
+            <th>Hito</th>
+            <th>Descripción</th>
+            <th>Fecha de entrega</th>
+        </tr>
+        <tr>
+            <td>Primer Boceto(Práctica 1)</td>
+            <td>Entrega de una página web simple</td>
+            <td>14 de febrero</td>
+        </tr>
+        <tr>
+            <td>Diseño de la Base de Datos</td>
+            <td>Definición y creación de la estructura de datos</td>
+            <td>20 de febrero</td>
+        </tr>
+        <tr>
+            <td>Desarrollo de Gestión de Recetas</td>
+            <td>Implementación del CRUD para recetas</td>
+            <td>1 de marzo</td>
+        </tr>
+        <tr>
+            <td>Implementación del Sistema de Recomendaciones</td>
+            <td>Desarrollo del algoritmo de sugerencias</td>
+            <td>10 de marzo</td>
+        </tr>
+        <tr>
+            <td>Arquitectura y Prototipo Funcional(Práctica 2)</td>
+            <td>Entrega con estructura base y funcionalidad esencial</td>
+            <td>7 de marzo</td>
+        </tr>
+        <tr>
+            <td>Desarrollo de Interacción Social(Práctica 3)</td>
+            <td>Implementación de valoraciones y comentarios y CSS</td>
+            <td>27 de marzo</td>
+        </tr>
+        <tr>
+            <td>Implementación de Moderación y Control</td>
+            <td>Gestión de usuarios y eliminación de contenido inapropiado</td>
+            <td>5 de abril</td>
+        </tr>
+        <tr>
+            <td>Desarrollo de Lista de Compras Automáticas</td>
+            <td>Generación de listas basadas en recetas</td>
+            <td>15 de abril</td>
+        </tr>
+        <tr>
+            <td>Pruebas y Correcciones</td>
+            <td>Pruebas de integración y solución de errores</td>
+            <td>1 de mayo</td>
+        </tr>
+        <tr>
+            <td>Entrega Final</td>
+            <td>Versión completa con todas las funcionalidades</td>
+            <td>9 de mayo</td>
+        </tr>
+    </table>
+    
+    <h2>Diagrama de Gantt</h2>
+    <p>A continuación se muestra un diagrama de Gantt representando la planificación:</p>
+    <img src="img/gant.png" alt="Diagrama de Gantt del Proyecto">
+    
+</body>
+</html>
+ 
+
+<!--   1. Fase de Análisis y Diseño (1 semana)
+Tareas
+
+    Requerimientos y especificaciones
+        Definir qué funcionalidades se implementarán con más detalle (gestión de recetas, interacción social, lista de compras, recomendaciones, moderación).
+        Identificar tecnologías, frameworks y estructura general del proyecto.
+        Dependencia: Ninguna (punto de partida).
+        Posible paralelismo: Se puede hacer en paralelo con la definición de la base de datos y la arquitectura.
+        Responsables sugeridos: Todo el equipo participa para alinear objetivos.
+
+    Diseño de la arquitectura
+        Determinar la organización del backend (controladores, servicios, modelos) y el frontend (componentes, vistas).
+        Decidir el patrón de arquitectura (MVC, MVVM, etc.).
+        Dependencia: Tarea 1.1 (especificaciones).
+        Posible paralelismo: En parte, con el diseño de la base de datos.
+        Responsables sugeridos: Carlos (backend), Alejandro Ramos (frontend).
+
+    Diseño de la base de datos
+        Modelar tablas, relaciones (recetas, usuarios, valoraciones, comentarios, etc.).
+        Determinar claves foráneas, índices y consideraciones de rendimiento.
+        Dependencia: Tarea 1.1 (especificaciones).
+        Posible paralelismo: Con el diseño de la arquitectura.
+        Responsables sugeridos: Carlos (backend), Nicolae (apoyo en integraciones).
+
+    Diseño de la interfaz y experiencia de usuario
+        Bocetos de pantallas para la gestión de recetas, interacción social, lista de compras, recomendaciones y moderación.
+        Dependencia: Tarea 1.1 (especificaciones).
+        Posible paralelismo: Con la arquitectura y la base de datos (aunque se deben ir ajustando detalles).
+        Responsables sugeridos: Alejandro García-Arias (diseño), Álvaro (apoyo en documentación de requerimientos).
+
+2. Fase de Desarrollo de Funcionalidades (3-4 semanas)
+Tareas principales
+
+    Gestión de Recetas
+        Crear modelos, controladores y vistas para subir, editar y eliminar recetas.
+        Manejo de imágenes (si aplica) y validaciones de usuario.
+        Dependencia: Conclusión de diseño de arquitectura y base de datos (Fase 1).
+        Posible paralelismo: Puede empezar mientras se perfeccionan otros diseños de interfaz.
+        Responsables sugeridos: Carlos (lógica backend), Alejandro Ramos (frontend).
+
+    Interacción Social (valoraciones con estrellas y comentarios)
+        Implementar modelo de comentarios y sistema de puntuación.
+        Agregar vistas para que los usuarios puedan comentar y puntuar recetas.
+        Dependencia: Gestión de recetas (necesita recetas existentes para comentar/puntuar).
+        Posible paralelismo: Una vez que la estructura de “Gestión de Recetas” esté avanzada, se puede trabajar en paralelo con la “Lista de compras” o “Moderación”.
+        Responsables sugeridos: Alejandro Ramos (frontend), Nicolae (backend/integración).
+
+    Lista de Compras Automática
+        Crear funcionalidad que lea los ingredientes de la receta y genere una lista de compra.
+        Opcionalmente, permitir exportar la lista o marcar ítems como comprados.
+        Dependencia: Gestión de recetas (para extraer ingredientes).
+        Posible paralelismo: Con Interacción Social, siempre y cuando “Gestión de Recetas” ya esté implementado.
+        Responsables sugeridos: Carlos (backend), Alejandro Ramos (frontend).
+
+    Sistema de Recomendaciones Personalizadas
+        Algoritmo que sugiera recetas en función de preferencias, historial de recetas vistas, valoraciones, etc.
+        Integración con base de datos para recopilar información de uso.
+        Dependencia: Interacción social (valoraciones, comentarios) y gestión de recetas.
+        Posible paralelismo: Se puede diseñar en paralelo mientras se terminan la Interacción Social y la Gestión de Recetas, pero la implementación final depende de tener datos reales de uso.
+        Responsables sugeridos: Nicolae (backend y lógica de recomendaciones), Carlos (ajustes en base de datos).
+
+    Moderación y Control
+        Panel de administrador para revisar y eliminar contenido inapropiado.
+        Gestión de usuarios problemáticos (bloqueo, eliminación, etc.).
+        Dependencia: Gestión de recetas e Interacción social (para moderar).
+        Posible paralelismo: Se puede desarrollar en paralelo con el Sistema de Recomendaciones una vez que exista la estructura de recetas y comentarios.
+        Responsables sugeridos: Álvaro (documentación y pruebas), Nicolae (backend/integración).
+
+3. Fase de Integración y Pruebas (2 semanas)
+Tareas
+
+    Integración de todas las funcionalidades
+        Asegurarse de que la Gestión de Recetas, Interacción Social, Lista de Compras, Recomendaciones y Moderación funcionen de manera conjunta.
+        Resolver conflictos de rutas, controladores, estilos, etc.
+        Dependencia: Todas las funcionalidades deben estar al menos en una versión beta.
+        Posible paralelismo: Varios miembros pueden hacer pruebas en distintos módulos a la vez.
+        Responsables sugeridos: Nicolae (integración), todos revisan sus módulos.
+
+    Pruebas Unitarias y de Integración
+        Testear cada módulo individualmente (unitarias) y en conjunto (integración).
+        Crear casos de prueba y documentarlos.
+        Dependencia: Disponibilidad de un entorno funcional.
+        Posible paralelismo: Sí, cada integrante prueba su parte y luego se realizan pruebas cruzadas.
+        Responsables sugeridos: Nicolae (coordinación de pruebas), Álvaro (documentación de resultados), resto del equipo (ejecución de pruebas).
+
+    Corrección de Errores y Optimizaciones
+        Ajustar tiempos de respuesta, corregir bugs y refinar la experiencia de usuario.
+        Dependencia: Reportes de las pruebas.
+        Posible paralelismo: Sí, cada funcionalidad se va puliendo de forma independiente.
+        Responsables sugeridos: Todo el equipo, cada uno en su área de responsabilidad.
+
+4. Fase de Documentación y Despliegue Final (1 semana)
+Tareas
+
+    Documentación Final
+        Elaborar guía de usuario y manual técnico (instalación, despliegue, dependencias).
+        Dependencia: Funcionalidades completas y probadas.
+        Posible paralelismo: Se puede hacer en paralelo con los últimos retoques de código.
+        Responsables sugeridos: Álvaro (coordinación), apoyo del resto para apartados técnicos.
+
+    Despliegue y Revisión Final
+        Configurar el entorno de producción (servidor, base de datos, seguridad).
+        Revisión final con pruebas de aceptación.
+        Dependencia: Todo lo anterior.
+        Posible paralelismo: Se hace al final, aunque la configuración del servidor puede adelantarse.
+        Responsables sugeridos: Carlos y Nicolae (backend), Alejandro Ramos (frontend), supervisión de todos.
+
+Resumen de Dependencias y Paralelismos
+
+    Gestión de Recetas es la base para gran parte de las funcionalidades (Interacción Social, Lista de Compras, Moderación, Recomendaciones).
+    Interacción Social debe esperar a que exista la estructura de recetas para comentar y puntuar, pero puede desarrollarse en paralelo con la Lista de Compras o la Moderación.
+    Lista de Compras depende de la estructura de las recetas (ingredientes), pero se puede desarrollar en paralelo con la Interacción Social.
+    Sistema de Recomendaciones requiere datos de recetas y valoraciones, por lo que empieza tras tener Interacción Social. Se puede diseñar en paralelo, pero su implementación final depende de contar con datos.
+    Moderación y Control también se apoya en la existencia de recetas y comentarios. Puede desarrollarse en paralelo con el Sistema de Recomendaciones una vez que existan esas entidades.
+
+Distribución Sugerida de Responsabilidades
+
+    Carlos Apaza Chuctaya:
+        Diseño y gestión de la base de datos.
+        Backend de “Gestión de Recetas” y soporte en “Lista de Compras”.
+
+    Alejandro García-Arias Fernández:
+        Diseño de interfaz y experiencia de usuario.
+        Maquetación principal (HTML/CSS), lineamientos de estilo.
+
+    Alejandro Ramos Yañez:
+        Implementación frontend (React, Vue, Angular o la tecnología elegida).
+        Desarrollo de vistas para “Gestión de Recetas”, “Interacción Social” y “Lista de Compras”.
+
+    Nicolae Gabriel Caliman:
+        Integración de componentes y pruebas.
+        Desarrollo del “Sistema de Recomendaciones” y “Moderación y Control” (backend).
+
+    Álvaro Cepeda Ramos:
+        Documentación y control de calidad.
+        Apoyo en la definición de casos de prueba, validación de requisitos y moderación.
+
+Plazos Estimados (Ejemplo)
+Fase	Semanas (aprox.)	Fechas de Referencia
+Análisis y Diseño	1	(Hasta el 14 de febrero)*
+Desarrollo Funcionalidades	3-4	(Segunda quincena febrero - mediados de marzo)
+Integración y Pruebas	2	(Finales de marzo - mediados de abril)
+Documentación y Despliegue	1	(Finales de abril - principios de mayo)
+
+    * Recuerda que las fechas exactas se ajustan según el enunciado general:
+
+        14 de febrero: primer boceto (sin CSS ni JS).
+        7 de marzo: arquitectura y prototipo funcional.
+        9 de mayo: entrega final completa.
+
+Puedes adaptar estos plazos a tus necesidades. Por ejemplo, iniciar la Fase de Desarrollo inmediatamente tras finalizar el primer boceto, continuar hasta el 7 de marzo con un prototipo funcional (Fase 2 a medias) y luego pulir e integrar todo de cara a la entrega final el 9 de mayo.
+
+Conclusión
+Este desglose de tareas y dependencias permite ver qué partes se pueden desarrollar en paralelo (Interacción Social y Lista de Compras) y cuáles requieren esperar (Recomendaciones, Moderación). Distribuir el trabajo por áreas (backend, frontend, integración, documentación) ayudará a aprovechar mejor el tiempo y las habilidades de cada miembro.
+-->
